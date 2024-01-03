@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@900&family=Caveat&family=Montserrat:ital,wght@0,300;1,300&family=Oleo+Script&family=Poppins:wght@500&family=Roboto:ital,wght@0,100;0,300;1,300;1,500&family=Young+Serif&display=swap"
+    rel="stylesheet">
+  <!-- CSS File -->
+  <link rel="stylesheet" href="./styles.css" />
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <section id="navigation">
+    <header>
+      <a href="#title" class="logo">LUKE</a>
+      <input type="checkbox" id="check">
+      <label for="check" class="burger">
+        <div class="menu-toggle">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </label>
+      <nav class="navbar">
+        <a class="nav-item" href="#title">Home</a>
+        <a class="nav-item" href="#about">About</a>
+        <a class="nav-item" href="#skills">Skills</a>
+        <a class="nav-item" href="#projects">Projects</a>
+        <a class="nav-item" href="#footer">Contact</a>
+        <a class="nav-item" href="./files/Luke_Campbell's_Resume_Fall_2023.pdf"><button>Resume</button></a>
+      </nav>
+    </header>
+  </section>
+
+  <!-- Title -->
+  <section id="title">
+    <div class="title-div">
+      <h1 class="fw-bold">LUKE CAMPBELL</h1>
+      <h2 class="lead">FULL STACK DEVELOPER</h2>
+    </div>
+  </section>
+
+
+  <!-- About -->
+  <section id="about">
+    <div class="aboutMe">
+      <img class="profileImage mb-3" src="./images/luke.png" alt="luke" />
+      <h2>Hello.</h2>
+      <p class="quote">
+        I am a full stack developer, artist and video game developer. I love
+        coding and listening to music while I work. 🎧
+      </p>
+    </div>
+  </section>
+
+  <hr />
+
+  <section id="skills">
+    <div class="skills-div">
+      <div class="skills-icons">
+        <img class="skill" src="./images/mysql.png" alt="">
+        <img class="skill" src="./images/html5.png" alt="">
+        <img class="skill" src="./images/css3.png" alt="">
+        <img class="skill" src="./images/bootstrap.png" alt="">
+        <img class="skill" src="./images/javascript.png" alt="">
+        <img class="skill" src="./images/nodejs.png" alt="">
+        <img class="skill" src="./images/expressjs.png" alt="">
+        <img class="skill" src="./images/jquery.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <hr/>
+
+  <section id="projects">
+
+    <div class="project-cards">
+      <div class="card"><img src="./images/comingsoon.png" alt=""></div>
+      <div class="card"><img src="./images/comingsoon.png" alt=""></div>
+      <div class="card"><img src="./images/comingsoon.png" alt=""></div>
+      <div class="card"><img src="./images/comingsoon.png" alt=""></div>
+      <div class="card"><img src="./images/comingsoon.png" alt=""></div>
+      <div class="card"><img src="./images/comingsoon.png" alt=""></div>
+    </div>
+  </section>
+
+  <hr/>
+
+  <section id="footer">
+    <footer>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/lukecampbellis/" class="social-icon"><i class="icon fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/Luke-E-Campbell" class="social-icon"><i class="icon fa-brands fa-github"></i></a>
+        <a href="#" class="social-icon"><i class="icon fa-brands fa-instagram"></i></a>
+      </div>
+      <div>
+        <p><i class="at fa-light fa-at"></i>2023 LUKE • All Rights Reserved</p>
+      </div>
+    </footer>
+  </section>
+
+  <!-- jQuery and JS File -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>

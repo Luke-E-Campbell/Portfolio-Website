@@ -1,0 +1,417 @@
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  background: url(images/desk.png) no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1rem;
+  overflow-x: hidden;
+}
+
+/* BURGER MENU */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  transition: transform 0.4s;
+}
+
+.bar1, .bar2, .bar3 {
+  background-color: #f6f7eb;
+  width: 25px;
+  height: 3px;
+  margin: 4px 0;
+  transition: transform 0.4s, opacity 0.4s;
+}
+
+.change .bar1 {
+  transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: rotate(45deg) translate(-5px, -5px);
+}
+
+#check {
+  display: none;
+}
+
+/* NAVIGATION */
+a,
+button {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  padding: 20px 5%;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+  color: #f6f7eb;
+  font-family: "Archivo", sans-serif;
+  font-size: 1.2rem;
+  order: -1;
+}
+
+.nav-item button{
+  margin: 0;
+}
+
+.nav-item, button {
+  text-decoration: none;
+  color: #f6f7eb;
+  margin: 0 20px;
+  transition: all 0.3s ease 0s;
+}
+
+.nav-item:link {
+  color: #f6f7eb;
+}
+
+.nav-item:visited {
+  color: #f6f7eb;
+}
+
+.nav-item:hover {
+  color: rgb(56, 88, 232);
+}
+
+.navbar {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: rgb(56, 88, 232);
+  border: none;
+  border-radius: 50px;
+  margin-left: 8px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(56, 88, 232, 0.7);
+}
+
+.solid-nav {
+  background-color: #393e41;
+  transition: background-color 0.2s linear;
+  box-shadow: 0px 2px 10px rgb(25, 25, 25);
+}
+
+/* TITLE */
+#title {
+  height: 100vh;
+  z-index: -1;
+  position: relative;
+}
+
+.title-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #f6f7eb;
+  position: relative;
+  top: 45%;
+  padding: 0 10%;
+  width: 100%;
+  height: auto;
+}
+
+.title-div h1 {
+  font-family: "Archivo", sans-serif;
+  font-size: 5.5rem;
+}
+
+/* ABOUT */
+#about {
+  background-color: white;
+  min-height: 500px;
+  height: 100vh;
+  font-family: "roboto", sans-serif;
+  overflow: hidden;
+}
+
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5%;
+  height: 100%;
+  font-family: "roboto", sans-serif;
+}
+
+.aboutMe * {
+  margin: 0.8rem 0;
+}
+
+.profileImage {
+  border-radius: 50%;
+  height: auto;
+  max-width: 20rem;
+  width: 100%;
+}
+
+.aboutMe h2 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+/* SKILLS */
+#skills {
+  background-color: white;
+  min-height: 500px;
+  height: 100vh;
+}
+
+
+.skills-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 100%;
+}
+
+.skills-icons{
+  text-align: center;
+  height: 6rem;
+}
+
+.skill {
+  height: 6rem;
+  filter: saturate(0%);
+  transition: all 0.3s ease 0s;
+}
+
+.skill:hover {
+  filter: saturate(100%);
+}
+
+.skill:visited {
+  filter: saturate(100%);
+}
+
+/* PROJECTS */
+#projects {
+  background-color: white;
+}
+
+.project-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 7.5rem 5rem;
+  flex-wrap: wrap;
+}
+
+.card, .card img {
+  height: 30rem;
+  object-fit: cover;
+}
+
+/* FOOTER */
+footer {
+  background-color: #393e41;
+  color: white;
+  padding: 1rem 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-icons a {
+  margin: 1.2rem;
+}
+
+.social-icons p {
+  text-align: center;
+}
+
+.icon {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.icon:hover {
+  color: rgb(56, 88, 232, 0.7);
+  transition: all 0.2s ease 0s;
+}
+
+.at {
+  font-style: normal;
+  font-size: 1.1rem;
+  position: relative;
+  bottom: 2px;
+}
+
+
+/* RESPONSIVE MEDIA QUERIES */
+
+/* 2xl */
+@media (max-width: 1536px) {}
+
+/* xl */
+@media (max-width: 1280px) {}
+
+/* lg */
+@media (max-width: 1024px) {
+  .title-div {
+    font-size: 0.8rem;
+  }
+
+  .title-div h1 {
+    font-family: "Archivo", sans-serif;
+    font-size: 4.1rem;
+  }
+
+  .card, .card img {
+    height: 25rem;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  header::before {
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(50px);
+  }
+
+  .menu-toggle {
+    display: block;
+    padding: 5.8px 0;
+  }
+
+  #check:checked~.navbar {
+    height: 27em;
+  }
+
+  .navbar {
+    box-shadow: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(50px);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: 0.3s ease;
+  }
+
+  .navbar a {
+    display: block;
+    font-size: 1.1rem;
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+
+  button {
+    transition: all 0s;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+  }
+
+  button:hover {
+    transition: 0.3s ease;
+    color: rgb(56, 88, 232);
+    background-color: transparent;
+  }
+
+  .title-div {
+    font-size: 0.7rem;
+  }
+
+  .title-div h1 {
+    font-family: "Archivo", sans-serif;
+    font-size: 3.4rem;
+  }
+
+  .card, .card img {
+    height: 20rem;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .title-div {
+    font-size: 0.6rem;
+  }
+
+  .title-div h1 {
+    font-family: "Archivo", sans-serif;
+    font-size: 2.5rem;
+  }
+
+  .card, .card img {
+    height: 15rem;
+  }
+}
+
+/* xs */
+@media (max-width: 475px) {
+  .title-div {
+    font-size: 0.6rem;
+  }
+
+  .title-div h1 {
+    font-family: "Archivo", sans-serif;
+    font-size: 1.7rem;
+  }
+
+  .card, .card img {
+    height: 10rem;
+  }
+}
