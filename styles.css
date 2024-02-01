@@ -14,7 +14,7 @@ html {
   scroll-behavior: smooth;
 }
 
-#tools{
+#tools {
   min-height: 25vh;
   background: url(images/desk1.png) no-repeat center;
   -webkit-background-size: cover;
@@ -26,20 +26,18 @@ html {
   align-items: center;
 }
 
-.arrow-icon{
+.arrow-icon {
   position: relative;
   top: 2rem;
-
   font-size: 1.5rem;
   color: #f7f7f7;
 }
 
-.sectionTitle{
+.sectionTitle {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 2.5rem;
-  padding: 20px 5%;
   color: black;
   font-weight: 100;
   font-family: "Roboto", sans-serif;
@@ -185,7 +183,7 @@ hr {
 
   border: 0;
   text-align: center;
-  
+
   &:before {
     content: "\2022 \2022 \2022 \2022 \2022";
     font-size: 50px;
@@ -216,7 +214,14 @@ hr {
 
 .title-div h1 {
   font-family: "Archivo", sans-serif;
+  font-weight: 100;
   font-size: 5.5rem;
+}
+
+.lead {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 3rem
 }
 
 /* ABOUT */
@@ -256,7 +261,7 @@ p {
   font-size: 1.1rem;
 }
 
-.skillsHeading{
+.skillsHeading {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -342,11 +347,35 @@ p {
 .contact-div {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   padding: 0 15%;
   height: 100%;
   font-family: "roboto", sans-serif;
+}
+
+.contact-section {
+  background-color: white;
+  padding: 7.5rem 5rem;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.plane-icon {
+  color: #3858e8;
+  position: relative;
+  top: 0;
+  font-size: 5rem;
+}
+
+#contact h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  color: black;
+  font-weight: 100;
+  font-family: "Roboto", sans-serif;
 }
 
 
@@ -411,6 +440,10 @@ footer {
     font-size: 4.1rem;
   }
 
+  .lead {
+    font-size: 2.5rem
+  }
+
   .card,
   .card img {
     height: 25rem;
@@ -420,7 +453,7 @@ footer {
 /* md */
 @media (max-width: 768px) {
   header::before {
-    background: #1F1F1F ;
+    background: #1F1F1F;
   }
 
   .menu-toggle {
@@ -477,6 +510,10 @@ footer {
     font-size: 3.4rem;
   }
 
+  .lead {
+    font-size: 2rem
+  }
+
   .card,
   .card img {
     height: 20rem;
@@ -492,6 +529,21 @@ footer {
   .title-div h1 {
     font-family: "Archivo", sans-serif;
     font-size: 2.5rem;
+  }
+
+  .lead {
+    font-size: 1.5rem
+  }
+
+  .aboutMe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 25px 10%;
+    min-height: 75vh;
+    font-family: "roboto", sans-serif;
   }
 
   .card,
@@ -511,10 +563,24 @@ footer {
     font-size: 1.7rem;
   }
 
+  .lead {
+    font-size: 1rem
+  }
+
+  .aboutMe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 25px 10%;
+    min-height: 75vh;
+    font-family: "roboto", sans-serif;
+  }
+
   .aboutMe h2 {
     font-size: 2.2rem;
   }
-
 
   .profileImage {
     border-radius: 50%;
