@@ -27,9 +27,23 @@ html {
   align-items: center;
 }
 
+#projects-div {
+  min-height: 25vh;
+  background: url(images/skill.jpg) no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
 .arrow-icon {
   position: relative;
-  top: 2rem;
+  top: 1rem;
   font-size: 1.5rem;
   color: #f7f7f7;
 }
@@ -257,7 +271,6 @@ hr {
   text-align: center;
 }
 
-
 p {
   font-size: 1.1rem;
 }
@@ -273,11 +286,22 @@ p {
   font-family: "Roboto", sans-serif;
 }
 
+.projectsHeading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  padding: 20px 5%;
+  color: #f7f7f7;
+  font-weight: 100;
+  font-family: "Roboto", sans-serif;
+}
+
 /* SKILLS */
 #skills {
   background-color: #f7f7f7;
   min-height: 500px;
-  height: 100vh;
+  height: 75vh;
 }
 
 
@@ -586,6 +610,18 @@ footer {
   .profileImage {
     border-radius: 50%;
     width: 16rem;
+  }
+
+  .skills-icons{
+    justify-content: center;
+    align-items: center;
+  }
+
+  .skill {
+    height: 4rem;
+    filter: saturate(0%);
+    transition: all 0.3s ease 0s;
+    border-radius: 15px;
   }
 
   .card,
