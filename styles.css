@@ -365,7 +365,7 @@ p {
   background-color: #f7f7f7;
   min-height: 500px;
   height: 100vh;
-  
+  margin-bottom: 10rempx;
 }
 
 .contact-div {
@@ -382,6 +382,7 @@ p {
   padding: 0 15%;
   height: 100%;
   font-family: "roboto", sans-serif;
+  overflow: hidden;
 }
 
 .contact-section {
@@ -508,6 +509,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: auto;
 }
 
 .social-icons {
