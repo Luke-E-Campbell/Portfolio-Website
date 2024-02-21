@@ -418,6 +418,7 @@ p {
   font-weight: light;
   font-family: "Roboto", sans-serif ;
   width: 100%;
+  margin-bottom: 10px;
 }
 
 .contact-section textarea{
@@ -431,9 +432,12 @@ input:focus, textarea:focus {
 }
 
 .contact-section button{
+  text-align: center;
+  width: 100%;
   position: relative;
-  top: 1rem;
   right: .5rem;
+  top: .5rem;
+
 }
 
 .contact-title{
@@ -709,5 +713,4 @@ footer {
     display: flex;
     justify-content: center;
   }
-
 }
