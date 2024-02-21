@@ -27,9 +27,22 @@ html {
   align-items: center;
 }
 
+#projects-div {
+  min-height: 25vh;
+  background: url(images/skill.jpg) no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
 .arrow-icon {
   position: relative;
-  top: 2rem;
   font-size: 1.5rem;
   color: #f7f7f7;
 }
@@ -196,7 +209,6 @@ hr {
 
 /* TITLE */
 #title {
-  z-index: -1;
   position: relative;
 }
 
@@ -257,7 +269,6 @@ hr {
   text-align: center;
 }
 
-
 p {
   font-size: 1.1rem;
 }
@@ -273,11 +284,22 @@ p {
   font-family: "Roboto", sans-serif;
 }
 
+.projectsHeading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  padding: 20px 5%;
+  color: #f7f7f7;
+  font-weight: 100;
+  font-family: "Roboto", sans-serif;
+}
+
 /* SKILLS */
 #skills {
   background-color: #f7f7f7;
   min-height: 500px;
-  height: 100vh;
+  height: 75vh;
 }
 
 
@@ -343,9 +365,17 @@ p {
   background-color: #f7f7f7;
   min-height: 500px;
   height: 100vh;
+  
 }
 
 .contact-div {
+  background-image: url(./images/contact.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  scroll-behavior: smooth;
+  background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -355,28 +385,117 @@ p {
 }
 
 .contact-section {
-  background-color: white;
-  padding: 7.5rem 5rem;
-  border-radius: 20px;
+  position: relative;
+  top: 15rem;
+  height: 45vh;
+
+  width: 100%;
   display: flex;
   justify-content: center;
 }
+
+.contact-section label{
+  color: #f7f7f7;
+  font-family: "Roboto", sans-serif;
+  display: block;
+  padding: 2px;
+}
+
+.contact-section input{
+  height: 2rem;
+}
+
+.contact-section input, textarea{
+  font-size: 1rem;
+  border-radius: 5px;
+  padding-left: 5px;
+  font-weight: light;
+  font-family: "Roboto", sans-serif ;
+}
+
+.contact-section textarea{
+  padding-top: 5px;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+}
+
+.contact-section button{
+  position: relative;
+  top: 1rem;
+  right: .5rem;
+}
+
+.contact-title{
+  position: relative;
+  top: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 12rem;
+}
+
 
 .plane-icon {
   color: #3858e8;
-  position: relative;
-  top: 0;
   font-size: 5rem;
+  padding: 2rem;
 }
 
 #contact h1 {
-  display: flex;
   justify-content: center;
   align-items: center;
   font-size: 2.5rem;
-  color: black;
+  color: #f7f7f7;
   font-weight: 100;
   font-family: "Roboto", sans-serif;
+}
+
+.input-container {
+  flex: 1;
+  font-weight: light;
+  font-size: 1.25rem; /* Adjust the font size as needed */
+}
+
+
+.input-container.full-width {
+  flex-basis: 100%; /* Make the message box full width */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%; /* Set the width to 100% */
+  box-sizing: border-box; /* Include padding and border in the width */
+}
+
+.input-group{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+input{
+width: 13rem;
+}
+
+textarea{
+width: 100%;
+height: 12rem;
+resize: none;
+}
+
+.contact-section form{
+  width: 100%;
+}
+
+.input-group textarea {
+  resize: none;
+  height: 10rem;
 }
 
 
@@ -425,10 +544,18 @@ footer {
 /* RESPONSIVE MEDIA QUERIES */
 
 /* 2xl */
-@media (max-width: 1536px) {}
+@media (max-width: 1536px) {
+  .contact-section, form{
+    height: 24rem;
+  }
+}
 
 /* xl */
-@media (max-width: 1280px) {}
+@media (max-width: 1280px) {
+  .contact-section, form{
+    height: 24rem;
+  }
+}
 
 /* lg */
 @media (max-width: 1024px) {
@@ -449,6 +576,20 @@ footer {
   .card img {
     height: 25rem;
   }
+
+  .input-group {
+    flex-direction: column;
+  }
+
+  /* Remove flex property to allow natural width */
+  .input-container {
+    flex: none;
+  }
+
+  .contact-section, form{
+    height: 34rem;
+  }
+
 }
 
 /* md */
@@ -489,14 +630,14 @@ footer {
     text-align: center;
   }
 
-  button {
+  .nav-item button {
     transition: all 0s;
     background-color: transparent;
     padding: 0;
     margin: 0;
   }
 
-  button:hover {
+  .nav-item button:hover {
     transition: 0.3s ease;
     color: rgb(56, 88, 232);
     background-color: transparent;
@@ -519,6 +660,14 @@ footer {
   .card img {
     height: 20rem;
   }
+
+  .skill {
+    height: 4rem;
+    filter: saturate(0%);
+    transition: all 0.3s ease 0s;
+    border-radius: 15px;
+  }
+
 }
 
 /* sm */
@@ -586,6 +735,11 @@ footer {
   .profileImage {
     border-radius: 50%;
     width: 16rem;
+  }
+
+  .skills-icons{
+    justify-content: center;
+    align-items: center;
   }
 
   .card,
