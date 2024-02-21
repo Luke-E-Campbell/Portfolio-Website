@@ -748,4 +748,220 @@ footer {
   .card img {
     height: 10rem;
   }
+
+  .plane-icon{
+    font-size: 4rem;
+  }
+
+
+  #contact {
+  background-color: #f7f7f7;
+  min-height: 500px;
+  height: 100vh;
+  margin-bottom: 10rempx;
+}
+
+.contact-div {
+  background-image: url(./images/contact.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  scroll-behavior: smooth;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15%;
+  height: 100%;
+  font-family: "roboto", sans-serif;
+  overflow: hidden;
+}
+
+.contact-section {
+  position: relative;
+  top: 15rem;
+  height: 45vh;
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-section label{
+  color: #f7f7f7;
+  font-family: "Roboto", sans-serif;
+  display: block;
+  padding: 2px;
+}
+
+.contact-section input{
+  height: 2rem;
+}
+
+.contact-section input, textarea{
+  font-size: 1rem;
+  border-radius: 5px;
+  padding-left: 5px;
+  font-weight: light;
+  font-family: "Roboto", sans-serif ;
+}
+
+.contact-section textarea{
+  padding-top: 5px;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+}
+
+.contact-section button{
+  position: relative;
+  top: 1rem;
+  right: .5rem;
+}
+
+.contact-title{
+  position: relative;
+  top: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 12rem;
+}
+
+
+.plane-icon {
+  color: #3858e8;
+  font-size: 5rem;
+  padding: 2rem;
+}
+
+#contact h1 {
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  color: #f7f7f7;
+  font-weight: 100;
+  font-family: "Roboto", sans-serif;
+}
+
+.input-container {
+  flex: 1;
+  font-weight: light;
+  font-size: 1.25rem; /* Adjust the font size as needed */
+}
+
+
+.input-container.full-width {
+  flex-basis: 100%; /* Make the message box full width */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%; /* Set the width to 100% */
+  box-sizing: border-box; /* Include padding and border in the width */
+}
+
+.input-group{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+input{
+width: 13rem;
+}
+
+textarea{
+width: 100%;
+height: 12rem;
+resize: none;
+}
+
+.contact-section form{
+  width: 100%;
+}
+
+.input-group textarea {
+  resize: none;
+  height: 10rem;
+}
+
+.contact-section {
+  top: 4rem;
+}
+
+.contact-section input{
+  height: 1.5rem;
+}
+
+.contact-section input, textarea{
+  font-size: .8rem;
+  border-radius: 5px;
+  padding-left: 5px;
+  font-weight: light;
+  font-family: "Roboto", sans-serif ;
+}
+
+.contact-section textarea{
+  padding-top: 5px;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+}
+
+.contact-section button{
+  position: relative;
+  top: 1rem;
+  right: .5rem;
+}
+
+.contact-title{
+  position: relative;
+  top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 12rem;
+}
+
+
+.plane-icon {
+  font-size: 4rem;
+  padding: 2rem;
+}
+
+#contact h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.input-container {
+  font-size: 1.25rem; /* Adjust the font size as needed */
+}
+
+.input-group{
+  gap: 1rem;
+  padding-bottom: 2rem;
+}
+
+input{
+width: 13rem;
+}
+
+textarea{
+height: 8rem;
+}
+
+.input-group textarea {
+  resize: none;
+  height: 10rem;
+}
 }
