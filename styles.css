@@ -387,10 +387,14 @@ p {
 .contact-section {
   position: relative;
   top: 15rem;
-  height: 45vh;
+  height: 26vh;
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+.contact-section form{
+  width: 100%;
 }
 
 .contact-section label{
@@ -402,18 +406,24 @@ p {
 
 .contact-section input{
   height: 2rem;
+
 }
 
 .contact-section input, textarea{
+  outline: none;
+  border: none;
   font-size: 1rem;
   border-radius: 5px;
   padding-left: 5px;
   font-weight: light;
   font-family: "Roboto", sans-serif ;
+  width: 100%;
 }
 
 .contact-section textarea{
   padding-top: 5px;
+  resize: none;
+  width: 100%;
 }
 
 input:focus, textarea:focus {
@@ -427,6 +437,7 @@ input:focus, textarea:focus {
 }
 
 .contact-title{
+  text-align: center;
   position: relative;
   top: 10rem;
   display: flex;
@@ -679,4 +690,24 @@ footer {
   .card img {
     height: 10rem;
   }
+
+  .contact-title{
+    position: relative;
+    top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 16rem;
+  }
+
+  .contact-section {
+    position: relative;
+    top: 4rem;
+    height: 45vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
 }
