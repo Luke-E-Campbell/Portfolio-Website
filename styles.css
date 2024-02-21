@@ -697,7 +697,7 @@ footer {
 
   .contact-title{
     position: relative;
-    top: 2rem;
+    top: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -707,10 +707,11 @@ footer {
 
   .contact-section {
     position: relative;
-    top: 4rem;
+    top: 2.5rem;
     height: 45vh;
     width: 100%;
     display: flex;
     justify-content: center;
   }
+
 }
