@@ -51,7 +51,6 @@
     </div>
   </section>
 
-
   <!-- About -->
   <section id="about">
     <div class="aboutMe">
@@ -73,8 +72,7 @@
     <a href="#skills" class="arrow-icon"><i class="fa-solid fa-chevron-down"></i></a>
   </div>
 
-  
-
+  <!-- Skills -->
   <section id="skills">
     <div class="skills-div">
       <div class="skills-icons">
@@ -91,14 +89,14 @@
       </div>
     </div>
   </section>
-
+  
+  <!-- Projects -->
   <div id="projects-div">
     <h2 class="projectsHeading">PROJECTS</h2>
     <a href="#projects" class="arrow-icon"><i class="fa-solid fa-chevron-down" </i></i></a>
   </div>
 
   <section id="projects">
-
     <div class="project-cards">
       <div class="card"><img src="./images/comingsoon.png" alt=""></div>
       <div class="card"><img src="./images/comingsoon.png" alt=""></div>
@@ -109,26 +107,32 @@
     </div>
   </section>
 
-  <hr />
-
+  <!-- Contact -->
   <section id="contact"">
     <div class=" contact-div">
 
-    <i class=" plane-icon fa-solid fa-paper-plane"></i>
-    <h1>Get in Contact!</h1>
+    <div class="contact-title">
+      <i class=" plane-icon fa-solid fa-paper-plane"></i>
+      <h1>Get in Contact!</h1>
+    </div>
 
     <div class="contact-section">
       <form id="form">
-        <div class="input-container">
-          <label for="name">Name</label>
-          <!-- The 'required' prop ensures a filled field before submission -->
-          <input type="text" id="name" name="name" required />
+        <div class="input-group">
+          <div class="input-container">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="input-container">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="input-container">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
         </div>
-        <div class="input-container">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required />
-        </div>
-        <div class="input-container">
+        <div class="input-container full-width">
           <label for="message">Message</label>
           <textarea id="message" name="message" rows="4" required></textarea>
         </div>
@@ -138,6 +142,7 @@
     </div>
   </section>
 
+  <!-- Footer -->
   <section id="footer">
     <footer>
       <div class="social-icons">
@@ -147,12 +152,10 @@
         <a href="#" class="social-icon"><i class="icon fa-brands fa-instagram"></i></a>
       </div>
       <div>
-        <p></i>© 2023 | LUKE</p>
+        <p></i>© 2024 | LUKE</p>
       </div>
     </footer>
   </section>
-
-
 
   <!-- jQuery and JS File -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -160,4 +163,3 @@
 </body>
 
 </html>
-
