@@ -313,7 +313,6 @@ p {
 }
 
 
-
 .skills-icons {
   display: flex;
   flex-wrap: wrap;
@@ -321,6 +320,7 @@ p {
   height: 6rem;
   gap: 15px;
   width: 90%;
+  padding: 2rem;
 
 }
 
@@ -337,6 +337,11 @@ p {
 
 .skill:visited {
   filter: saturate(100%);
+}
+
+.experience-text{
+  padding: 2rem;
+  text-align: center;
 }
 
 /* PROJECTS */
@@ -358,6 +363,10 @@ p {
   height: 30rem;
   object-fit: cover;
   border-radius: 20px;
+}
+
+.tindog-image{
+  height: px;
 }
 
 /* CONTACT */
@@ -617,6 +626,16 @@ footer {
     border-radius: 15px;
   }
 
+  .skills-icons{
+    position: relative;
+    bottom: 10rem;
+  }
+
+  .experience-text{
+    position: relative;
+    bottom: 8rem;
+  }
+
 }
 
 /* sm */
@@ -645,8 +664,7 @@ footer {
     font-family: "roboto", sans-serif;
   }
 
-  .card,
-  .card img {
+  .card, .card img {
     height: 15rem;
   }
 }
@@ -691,8 +709,7 @@ footer {
     align-items: center;
   }
 
-  .card,
-  .card img {
+  .card, .card img {
     height: 10rem;
   }
 
@@ -715,8 +732,7 @@ footer {
     justify-content: center;
   }
 
-  .contact-section input,
-  textarea {
+  .contact-section input,textarea {
     margin-bottom: 12px;
   }
 
